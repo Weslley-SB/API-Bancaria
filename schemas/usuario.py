@@ -10,5 +10,5 @@ class UsuarioCreate(UsuarioBase): #Apos validar e der certo, aqui o preenchiment
 class UsuarioResponse(UsuarioBase): #Aqui é enviado o JSON sem a senha para o usuario
     id: int
 
-class Config:
-    from_attributes = True
+    class Config:
+        from_attributes = True

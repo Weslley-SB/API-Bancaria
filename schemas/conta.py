@@ -8,8 +8,8 @@ class ContaCreate(ContaBase):
 
 class ContaResponse(ContaBase):
     id: int
-    numero_conta = str
+    numero_conta: str
     saldo: float
 
-    class config:
+    class Config:
         from_attributes = True
